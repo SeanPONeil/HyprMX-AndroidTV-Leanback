@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        HyprMXHelper.getInstance(this, "-80", "1111", UUID.randomUUID().toString());
+        HyprMXHelper.getInstance(this, "-116", "1111testcache1111", UUID.randomUUID().toString());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
