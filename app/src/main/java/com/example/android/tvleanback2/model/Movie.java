@@ -16,6 +16,7 @@
 
 package com.example.android.tvleanback2.model;
 
+import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -89,7 +90,7 @@ public class Movie implements Parcelable {
     }
 
     public String getVideoUrl() {
-        return mVideoUrl;
+        return "http://test-sites.junlabs.com/vast_test/asstatic/hobbit.mp4";
     }
 
     public void setVideoUrl(String videoUrl) {
