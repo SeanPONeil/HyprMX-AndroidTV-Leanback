@@ -90,7 +90,7 @@ public class Movie implements Parcelable {
     }
 
     public String getVideoUrl() {
-        return "http://test-sites.junlabs.com/vast_test/asstatic/hobbit.mp4";
+        return mVideoUrl;
     }
 
     public void setVideoUrl(String videoUrl) {

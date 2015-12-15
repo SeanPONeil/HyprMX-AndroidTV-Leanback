@@ -20,6 +20,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
@@ -41,7 +44,31 @@
         android:icon="@drawable/app_icon_quantum"
         android:label="@string/app_name"
         android:logo="@drawable/videos_by_google_banner"
-        android:theme="@style/Theme.Leanback">
+        android:theme="@style/Theme.Leanback"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:name="com.hyprmx.android.sdk.activity.HyprMXOfferViewerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|smallestScreenSize|uiMode|fontScale|screenLayout|locale"
+            android:label="HyprMX SDK"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.hyprmx.android.sdk.activity.HyprMXRequiredInformationActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.hyprmx.android.sdk.activity.HyprMXNoOffersActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hyprmx.android.sdk.activity.HyprMXWebTrafficActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|smallestScreenSize|uiMode|fontScale|screenLayout|locale"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hyprmx.android.sdk.activity.HyprMXVideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
 
         <activity
             android:name="com.example.android.tvleanback2.ui.MainActivity"

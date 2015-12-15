@@ -14,6 +14,7 @@
 
 package com.example.android.tvleanback2.ui;
 
+import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
@@ -197,9 +198,15 @@ public class MovieDetailsFragment extends DetailsFragment {
             @Override
             public void onActionClicked(Action action) {
                 if (action.getId() == ACTION_WATCH_TRAILER) {
-                    Intent intent = new Intent(getActivity(), PlaybackOverlayActivity.class);
-                    intent.putExtra(MovieDetailsActivity.MOVIE, mSelectedMovie);
-                    startActivity(intent);
+                    TrailerClickedRunnable runnable =
+                            new TrailerClickedRunnable(getActivity(), mSelectedMovie);
+                    MovieDetailsActivity activity = ((MovieDetailsActivity) getActivity());
+                    if (activity.areOffersAvailable) {
+                        activity.setTrailerClickedRunnable(runnable);
+                        activity.getPresentation().show(activity, true);
+                    } else {
+                        runnable.run();
+                    }
                 } else {
                     Toast.makeText(getActivity(), action.toString(), Toast.LENGTH_SHORT).show();
                 }
@@ -326,6 +333,24 @@ public class MovieDetailsFragment extends DetailsFragment {
                         MovieDetailsActivity.SHARED_ELEMENT_NAME).toBundle();
                 getActivity().startActivity(intent, bundle);
             }
+        }
+    }
+
+    final class TrailerClickedRunnable implements Runnable {
+
+        Activity activity;
+        Movie movie;
+
+        public TrailerClickedRunnable(Activity activity, Movie movie) {
+            this.activity = activity;
+            this.movie = movie;
+        }
+
+        @Override
+        public void run() {
+            Intent intent = new Intent(getActivity(), PlaybackOverlayActivity.class);
+            intent.putExtra(MovieDetailsActivity.MOVIE, mSelectedMovie);
+            startActivity(intent);
         }
     }
 }

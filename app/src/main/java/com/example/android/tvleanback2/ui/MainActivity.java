@@ -19,6 +19,9 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.android.tvleanback2.R;
+import com.hyprmx.android.sdk.HyprMXHelper;
+
+import java.util.UUID;
 
 /*
  * MainActivity class that loads MainFragment
@@ -30,6 +33,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        HyprMXHelper.getInstance(this, "-80", "1111", UUID.randomUUID().toString());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
