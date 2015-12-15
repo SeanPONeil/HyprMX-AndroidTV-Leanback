@@ -94,6 +94,7 @@ public class MovieDetailsActivity extends HyprMXActivity {
     @Override
     public void onOfferCompleted(Offer offer) {
         if (runnable != null) {
+            Toast.makeText(this, "Offer completed, reward delivered", Toast.LENGTH_LONG).show();
             runnable.run();
         }
     }
@@ -101,6 +102,7 @@ public class MovieDetailsActivity extends HyprMXActivity {
     @Override
     public void onOfferCancelled(Offer offer) {
         if (runnable != null) {
+            Toast.makeText(this, "Offer cancelled", Toast.LENGTH_LONG).show();
             runnable.run();
         }
     }
