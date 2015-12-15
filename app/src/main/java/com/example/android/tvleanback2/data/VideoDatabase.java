@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.data;
+package com.example.android.tvleanback2.data;
 
 import android.app.SearchManager;
 import android.content.ContentValues;
@@ -27,8 +27,8 @@ import android.media.Rating;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.model.Movie;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.model.Movie;
 
 import org.json.JSONException;
 

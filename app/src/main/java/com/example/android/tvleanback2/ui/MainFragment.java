@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.LoaderManager;
 import android.content.Intent;
@@ -43,14 +43,14 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.data.VideoItemLoader;
-import com.example.android.tvleanback.data.VideoProvider;
-import com.example.android.tvleanback.model.Movie;
-import com.example.android.tvleanback.presenter.CardPresenter;
-import com.example.android.tvleanback.presenter.GridItemPresenter;
-import com.example.android.tvleanback.presenter.IconHeaderItemPresenter;
-import com.example.android.tvleanback.recommendation.UpdateRecommendationsService;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.data.VideoItemLoader;
+import com.example.android.tvleanback2.data.VideoProvider;
+import com.example.android.tvleanback2.model.Movie;
+import com.example.android.tvleanback2.presenter.CardPresenter;
+import com.example.android.tvleanback2.presenter.GridItemPresenter;
+import com.example.android.tvleanback2.presenter.IconHeaderItemPresenter;
+import com.example.android.tvleanback2.recommendation.UpdateRecommendationsService;
 
 import java.net.URI;
 import java.util.HashMap;
@@ -121,10 +121,10 @@ public class MainFragment extends BrowseFragment implements
         setHeadersTransitionOnBackEnabled(true);
 
         // Set fastLane (or headers) background color
-        setBrandColor(getResources().getColor(R.color.fastlane_background, null));
+        setBrandColor(getResources().getColor(R.color.fastlane_background));
 
         // Set search icon color.
-        setSearchAffordanceColor(getResources().getColor(R.color.search_opaque, null));
+        setSearchAffordanceColor(getResources().getColor(R.color.search_opaque));
 
         setHeaderPresenterSelector(new PresenterSelector() {
             @Override

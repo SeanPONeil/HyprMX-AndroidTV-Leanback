@@ -12,13 +12,13 @@
  * the License.
  */
 
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.android.tvleanback.R;
+import com.example.android.tvleanback2.R;
 
 /*
  * Details activity class that loads LeanbackDetailsFragment class

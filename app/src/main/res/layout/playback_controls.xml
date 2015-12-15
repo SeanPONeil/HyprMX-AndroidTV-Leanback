@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/playback_controls_fragment"
-        android:name="com.example.android.tvleanback.ui.PlaybackOverlayFragment"
+        android:name="com.example.android.tvleanback2.ui.PlaybackOverlayFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

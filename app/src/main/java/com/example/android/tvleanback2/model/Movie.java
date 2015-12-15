@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.model;
+package com.example.android.tvleanback2.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

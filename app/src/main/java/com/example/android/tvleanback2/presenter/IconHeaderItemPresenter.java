@@ -1,4 +1,4 @@
-package com.example.android.tvleanback.presenter;
+package com.example.android.tvleanback2.presenter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tvleanback.R;
+import com.example.android.tvleanback2.R;
 
 public class IconHeaderItemPresenter extends RowHeaderPresenter {
 

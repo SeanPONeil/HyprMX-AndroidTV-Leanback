@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -27,7 +27,7 @@ import android.support.v17.leanback.widget.GuidanceStylist;
 import android.support.v17.leanback.widget.GuidanceStylist.Guidance;
 import android.support.v17.leanback.widget.GuidedAction;
 
-import com.example.android.tvleanback.R;
+import com.example.android.tvleanback2.R;
 
 import java.util.List;
 

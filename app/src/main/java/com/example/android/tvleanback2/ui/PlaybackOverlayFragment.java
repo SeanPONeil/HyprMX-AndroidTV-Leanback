@@ -11,7 +11,7 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -58,10 +58,10 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.data.VideoProvider;
-import com.example.android.tvleanback.model.Movie;
-import com.example.android.tvleanback.presenter.CardPresenter;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.data.VideoProvider;
+import com.example.android.tvleanback2.model.Movie;
+import com.example.android.tvleanback2.presenter.CardPresenter;
 
 import java.util.Timer;
 import java.util.TimerTask;

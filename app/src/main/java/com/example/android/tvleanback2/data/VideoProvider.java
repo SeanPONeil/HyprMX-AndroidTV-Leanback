@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.data;
+package com.example.android.tvleanback2.data;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.util.Log;
 
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.model.Movie;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.model.Movie;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -246,13 +246,18 @@ public class VideoProvider {
         try {
             java.net.URL url = new java.net.URL(urlString);
             URLConnection urlConnection = url.openConnection();
+            urlConnection.getInputStream();
+            Log.d(TAG, "failed 1");
             reader = new BufferedReader(new InputStreamReader(
                     urlConnection.getInputStream(), "iso-8859-1"));
+            Log.d(TAG, "failed 2");
             StringBuilder sb = new StringBuilder();
+            Log.d(TAG, "failed 3");
             String line;
             while ((line = reader.readLine()) != null) {
                 sb.append(line);
             }
+            Log.d(TAG, "failed 4");
             String json = sb.toString();
             return new JSONObject(json);
         } catch (Exception e) {

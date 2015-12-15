@@ -11,7 +11,7 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.Fragment;
 import android.content.res.Resources;
@@ -26,7 +26,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
-import com.example.android.tvleanback.R;
+import com.example.android.tvleanback2.R;
 
 /*
  * This class demonstrates how to extend ErrorFragment.

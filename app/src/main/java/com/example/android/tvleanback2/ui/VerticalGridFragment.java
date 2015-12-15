@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,10 +29,10 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.util.Log;
 import android.view.View;
 
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.data.VideoProvider;
-import com.example.android.tvleanback.model.Movie;
-import com.example.android.tvleanback.presenter.CardPresenter;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.data.VideoProvider;
+import com.example.android.tvleanback2.model.Movie;
+import com.example.android.tvleanback2.presenter.CardPresenter;
 
 import java.util.Collections;
 import java.util.HashMap;

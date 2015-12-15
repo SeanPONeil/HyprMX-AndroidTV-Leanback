@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.NotificationManager;
 import android.content.Context;
@@ -53,11 +53,11 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.data.VideoProvider;
-import com.example.android.tvleanback.model.Movie;
-import com.example.android.tvleanback.presenter.CardPresenter;
-import com.example.android.tvleanback.presenter.DetailsDescriptionPresenter;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.data.VideoProvider;
+import com.example.android.tvleanback2.model.Movie;
+import com.example.android.tvleanback2.presenter.CardPresenter;
+import com.example.android.tvleanback2.presenter.DetailsDescriptionPresenter;
 
 import java.util.HashMap;
 import java.util.List;
@@ -183,7 +183,7 @@ public class MovieDetailsFragment extends DetailsFragment {
                 new FullWidthDetailsOverviewRowPresenter(new DetailsDescriptionPresenter(),
                         new MovieDetailsOverviewLogoPresenter());
 
-        detailsPresenter.setBackgroundColor(getResources().getColor(R.color.selected_background, null));
+        detailsPresenter.setBackgroundColor(getResources().getColor(R.color.selected_background));
         detailsPresenter.setInitialState(FullWidthDetailsOverviewRowPresenter.STATE_HALF);
 
         // Hook up transition element.

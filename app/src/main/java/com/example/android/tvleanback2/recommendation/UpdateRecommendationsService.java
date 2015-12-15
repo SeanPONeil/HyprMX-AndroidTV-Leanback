@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.recommendation;
+package com.example.android.tvleanback2.recommendation;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -27,10 +27,10 @@ import android.support.app.recommendation.ContentRecommendation;
 import android.util.Log;
 
 import com.bumptech.glide.Glide;
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.data.VideoProvider;
-import com.example.android.tvleanback.model.Movie;
-import com.example.android.tvleanback.ui.MovieDetailsActivity;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.data.VideoProvider;
+import com.example.android.tvleanback2.model.Movie;
+import com.example.android.tvleanback2.ui.MovieDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;

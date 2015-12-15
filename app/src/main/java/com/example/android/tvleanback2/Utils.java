@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback;
+package com.example.android.tvleanback2;
 
 import android.app.Activity;
 import android.content.Context;

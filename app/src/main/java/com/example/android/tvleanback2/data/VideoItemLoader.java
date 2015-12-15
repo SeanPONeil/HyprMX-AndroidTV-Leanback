@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.data;
+package com.example.android.tvleanback2.data;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
 import android.util.Log;
 
-import com.example.android.tvleanback.model.Movie;
+import com.example.android.tvleanback2.model.Movie;
 
 import java.util.HashMap;
 import java.util.List;

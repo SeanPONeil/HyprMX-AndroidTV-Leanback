@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.recommendation;
+package com.example.android.tvleanback2.recommendation;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

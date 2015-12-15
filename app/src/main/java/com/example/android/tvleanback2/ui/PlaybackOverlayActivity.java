@@ -11,7 +11,7 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.example.android.tvleanback.ui;
+package com.example.android.tvleanback2.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,10 +30,10 @@ import android.widget.VideoView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.Utils;
-import com.example.android.tvleanback.data.VideoProvider;
-import com.example.android.tvleanback.model.Movie;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.Utils;
+import com.example.android.tvleanback2.data.VideoProvider;
+import com.example.android.tvleanback2.model.Movie;
 
 /**
  * PlaybackOverlayActivity for video playback that loads PlaybackOverlayFragment and handles
@@ -357,7 +357,7 @@ public class PlaybackOverlayActivity extends Activity {
 
     private void setVideoPath(String videoUrl) {
         setPosition(0);
-        mVideoView.setVideoPath(videoUrl);
+        mVideoView.setVideoURI(Uri.parse(videoUrl));
         mStartTimeMillis = 0;
         mDuration = Utils.getDuration(videoUrl);
     }

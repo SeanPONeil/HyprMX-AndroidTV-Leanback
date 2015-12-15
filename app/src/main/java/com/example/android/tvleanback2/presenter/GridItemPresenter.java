@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.presenter;
+package com.example.android.tvleanback2.presenter;
 
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -23,8 +23,8 @@ import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.ui.MainFragment;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.ui.MainFragment;
 
 public class GridItemPresenter extends Presenter {
     private final MainFragment mainFragment;
@@ -44,7 +44,7 @@ public class GridItemPresenter extends Presenter {
         view.setLayoutParams(new ViewGroup.LayoutParams(width, height));
         view.setFocusable(true);
         view.setFocusableInTouchMode(true);
-        view.setBackgroundColor(mainFragment.getResources().getColor(R.color.default_background, null));
+        view.setBackgroundColor(mainFragment.getResources().getColor(R.color.default_background));
         view.setTextColor(Color.WHITE);
         view.setGravity(Gravity.CENTER);
         return new ViewHolder(view);

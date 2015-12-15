@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.data;
+package com.example.android.tvleanback2.data;
 
 import android.app.SearchManager;
 import android.content.ContentProvider;

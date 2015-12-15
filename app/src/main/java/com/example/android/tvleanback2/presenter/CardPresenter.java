@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.tvleanback.presenter;
+package com.example.android.tvleanback2.presenter;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -24,9 +24,9 @@ import android.util.Log;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.example.android.tvleanback.BuildConfig;
-import com.example.android.tvleanback.R;
-import com.example.android.tvleanback.model.Movie;
+import com.example.android.tvleanback2.BuildConfig;
+import com.example.android.tvleanback2.R;
+import com.example.android.tvleanback2.model.Movie;
 
 /*
  * A CardPresenter is used to generate Views and bind Objects to them on demand.
@@ -43,8 +43,8 @@ public class CardPresenter extends Presenter {
     public ViewHolder onCreateViewHolder(ViewGroup parent) {
         if (BuildConfig.DEBUG) Log.d(TAG, "onCreateViewHolder");
 
-        sDefaultBackgroundColor = parent.getResources().getColor(R.color.default_background, null);
-        sSelectedBackgroundColor = parent.getResources().getColor(R.color.selected_background, null);
+        sDefaultBackgroundColor = parent.getResources().getColor(R.color.default_background);
+        sSelectedBackgroundColor = parent.getResources().getColor(R.color.selected_background);
         mDefaultCardImage = parent.getResources().getDrawable(R.drawable.movie, null);
 
         ImageCardView cardView = new ImageCardView(parent.getContext()) {
