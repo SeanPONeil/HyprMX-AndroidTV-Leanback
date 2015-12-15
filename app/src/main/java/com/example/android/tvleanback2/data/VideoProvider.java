@@ -246,18 +246,13 @@ public class VideoProvider {
         try {
             java.net.URL url = new java.net.URL(urlString);
             URLConnection urlConnection = url.openConnection();
-            urlConnection.getInputStream();
-            Log.d(TAG, "failed 1");
             reader = new BufferedReader(new InputStreamReader(
                     urlConnection.getInputStream(), "iso-8859-1"));
-            Log.d(TAG, "failed 2");
             StringBuilder sb = new StringBuilder();
-            Log.d(TAG, "failed 3");
             String line;
             while ((line = reader.readLine()) != null) {
                 sb.append(line);
             }
-            Log.d(TAG, "failed 4");
             String json = sb.toString();
             return new JSONObject(json);
         } catch (Exception e) {
