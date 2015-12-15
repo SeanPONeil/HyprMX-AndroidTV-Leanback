@@ -118,7 +118,7 @@
         <!-- Provides search suggestions for keywords against video metadata. -->
         <provider
             android:name="com.example.android.tvleanback2.data.VideoContentProvider"
-            android:authorities="com.example.androidtvleanback"
+            android:authorities="com.example.androidtvleanback2"
             android:exported="true" />
 
         <receiver

@@ -33,7 +33,7 @@ import java.util.Arrays;
  */
 public class VideoContentProvider extends ContentProvider {
     private static final String TAG = "VideoContentProvider";
-    private static final String AUTHORITY = "com.example.android.tvleanback";
+    private static final String AUTHORITY = "com.example.android.tvleanback2";
 
     // UriMatcher stuff
     private static final int SEARCH_SUGGEST = 0;
