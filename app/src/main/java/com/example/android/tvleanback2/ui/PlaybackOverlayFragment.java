@@ -200,10 +200,10 @@ public class PlaybackOverlayFragment extends android.support.v17.leanback.app.Pl
         ps.addClassPresenter(ListRow.class, new ListRowPresenter());
         mRowsAdapter = new ArrayObjectAdapter(ps);
 
-        addPlaybackControlsRow();
-        addOtherRows();
-
-        setAdapter(mRowsAdapter);
+//        addPlaybackControlsRow();
+//        addOtherRows();
+//
+//        setAdapter(mRowsAdapter);
     }
 
     private void togglePlayback(boolean playPause) {
