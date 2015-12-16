@@ -200,7 +200,7 @@ public class PlaybackOverlayFragment extends android.support.v17.leanback.app.Pl
         ps.addClassPresenter(ListRow.class, new ListRowPresenter());
         mRowsAdapter = new ArrayObjectAdapter(ps);
 
-//        addPlaybackControlsRow();
+        addPlaybackControlsRow();
 //        addOtherRows();
 //
 //        setAdapter(mRowsAdapter);
@@ -303,10 +303,10 @@ public class PlaybackOverlayFragment extends android.support.v17.leanback.app.Pl
     }
 
     private int getUpdatePeriod() {
-        if (getView() == null || mPlaybackControlsRow.getTotalTime() <= 0) {
+//        if (getView() == null || mPlaybackControlsRow.getTotalTime() <= 0) {
             return DEFAULT_UPDATE_PERIOD;
-        }
-        return Math.max(UPDATE_PERIOD, mPlaybackControlsRow.getTotalTime() / getView().getWidth());
+//        }
+//        return Math.max(UPDATE_PERIOD, mPlaybackControlsRow.getTotalTime() / getView().getWidth());
     }
 
     private void startProgressAutomation() {
